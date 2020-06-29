@@ -1,0 +1,3 @@
+[submodule "resources/sass/open-iconic"]
+	path = resources/sass/open-iconic
+	url = https://github.com/iconic/open-iconic.git
