@@ -13,7 +13,7 @@ return [
 	|
 	*/
 
-	'failed'	=> "Users's credentials do not match.",
-	'throttle'	=> 'Too many login attempts. Please try again in :seconds seconds.',
+	'failed'	=> 'Реквізити користувача не збігаються.',
+	'throttle'	=> 'Занадто багато спроб авторизації. Спробуйте ще раз через: seconds секунд.',
 
 ];

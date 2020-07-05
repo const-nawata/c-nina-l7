@@ -10,4 +10,11 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+	protected $logger;
+
+	public function __construct( \Illuminate\Support\Facades\Log $logger )
+	{
+		$this->logger	= $logger;
+	}
 }

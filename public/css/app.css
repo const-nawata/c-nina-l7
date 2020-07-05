@@ -1,0 +1,24 @@
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
+  min-width: 0;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang a {
+  color: #e2ec9d;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang a:hover {
+  color: #c9db48;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
+  background-color: #9febf3;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item {
+  color: #7b4412;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item:hover {
+  background-color: #96cbd0;
+}
+

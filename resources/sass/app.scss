@@ -1,1 +1,24 @@
-//
+$lang_menu_item_bg_color: #9febf3;
+$lang_menu_item_color: #7b4412;
+$lang_link_color: #e2ec9d;
+
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
+	min-width: 0;
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang a{
+  color: $lang_link_color;
+}
+div.container.c-cont div.jumbotron-cnina div.lang a:hover{
+  color: darken($lang_link_color, 20%);
+}
+
+div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
+	background-color: $lang_menu_item_bg_color;
+}
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item{
+  color: $lang_menu_item_color;
+}
+div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item:hover{
+  background-color: invert($lang_menu_item_bg_color, 15%);
+}

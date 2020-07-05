@@ -37,7 +37,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['nawata','errorlog'],
             'ignore_exceptions' => false,
         ],
 
@@ -46,6 +46,18 @@ return [
             'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',
         ],
+
+		'nawata' => [
+			'driver' => 'single',
+			'formatter' => Monolog\Formatter\LineFormatter::class,
+			'path' => storage_path('../../../logs/debug.log'),
+			'level' => 'debug',
+			'formatter_with'	=> [
+				'dateFormat' => 'd-m-Y H:i:s',
+				'format'	=> "\n[%datetime%] %channel%.%level_name% # %context.method% # Line: %context.line%\n%message%\n",
+				'ignoreEmptyContextAndExtra'	=> true
+			]
+		],
 
         'daily' => [
             'driver' => 'daily',
