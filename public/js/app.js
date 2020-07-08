@@ -19285,7 +19285,28 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 $(document).ready(function () {
   $("div.lang a.dropdown-item").click(function () {
-    alert("Test message of lang item."); // window.location.replace( "/"+$(this).attr("lang")+"/"+current_url );
+    var lang = $(this).attr("lang");
+    $.ajax({
+      method: "POST",
+      url: _setlang_url,
+      dataType: "JSON",
+      data: {
+        lang: lang
+      },
+      success: function success(resp) {
+        if (resp.success) {
+          location.reload();
+        } else {
+          alert("Server error. Failed to change Language.");
+        }
+      },
+      error: function error() {
+        console.log({
+          message: 'Could not get Data',
+          isError: true
+        });
+      }
+    });
   });
 });
 

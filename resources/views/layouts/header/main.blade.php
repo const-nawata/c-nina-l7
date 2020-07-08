@@ -1,5 +1,4 @@
 <div class="container c-cont">
-
 	<div class="jumbotron bg-info border-bottom border-warning jumbotron-cnina">
 		<div class="row">
 			<div class="col-sm-11 shop-title">{{ env('APP_NAME') }}</div>
@@ -15,9 +14,4 @@
 			</div>
 		</div>
 	</div>
-
 </div>
-
-<script>
-
-</script>

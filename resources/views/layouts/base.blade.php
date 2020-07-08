@@ -6,6 +6,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<!-- Optional meta tags (NWT) -->
 	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
@@ -28,6 +29,15 @@
 	<link href="{{ asset('open-iconic/font/css/open-iconic-bootstrap.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+	<script>
+		let _setlang_url	= "{{ route('setlang', [], false) }}";
+
+		$.ajaxSetup({
+			headers: {
+				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
+		});
+	</script>
 </head>
 
 <body>
@@ -37,7 +47,7 @@
 
 @yield('footer')
 
-{{--@section('javascript')--}}
-{{--@show--}}
+@section('javascript')
+@show
 </body>
 </html>
