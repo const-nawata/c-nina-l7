@@ -19283,6 +19283,33 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+$(document).ready(function () {
+  $("div.lang a.dropdown-item").click(function () {
+    var lang = $(this).attr("lang");
+    $.ajax({
+      method: "POST",
+      url: _setlang_url,
+      dataType: "JSON",
+      data: {
+        lang: lang
+      },
+      success: function success(resp) {
+        if (resp.success) {
+          location.reload();
+        } else {
+          alert("Server error. Failed to change Language.");
+        }
+      },
+      error: function error() {
+        console.log({
+          message: 'Could not get Data',
+          isError: true
+        });
+      }
+    });
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19328,15 +19355,27 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/open-iconic/font/css/open-iconic-bootstrap.scss":
+/*!************************************************************************!*\
+  !*** ./resources/sass/open-iconic/font/css/open-iconic-bootstrap.scss ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!******************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/open-iconic/font/css/open-iconic-bootstrap.scss ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! E:\http\c-nina-l7\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\http\c-nina-l7\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\http\c-nina-l7\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! E:\http\c-nina-l7\resources\sass\open-iconic\font\css\open-iconic-bootstrap.scss */"./resources/sass/open-iconic/font/css/open-iconic-bootstrap.scss");
 
 
 /***/ })

@@ -9,8 +9,6 @@ class IndexController extends Controller
 {
 	public function index( Request $request ){
 
-		session(['current_locale' => 'ru']);//TODO: Must be removed after set locale logic implementation.
-
 		$view_data	= [
 			'title'	=> 'Index page. ',
 			'method_name' => 'Index'
@@ -20,10 +18,10 @@ class IndexController extends Controller
 	}
 //______________________________________________________________________________
 
-	public function setLang(){
-
-
-		return [1, 2, 3];
+	public function setLang( Request $request ){
+		$lang	= $request->input('lang', 'en');
+		session(['current_locale' => $lang]);
+		return response()->json([ 'success' => true ], 200);
 	}
 //______________________________________________________________________________
 
