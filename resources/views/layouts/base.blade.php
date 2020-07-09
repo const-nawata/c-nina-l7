@@ -41,11 +41,15 @@
 </head>
 
 <body>
+<div style="padding-left: 180px; padding-right: 180px;">
+<div class="container-fluid c-cont">
 @yield('header')
 
 @yield('body')
 
 @yield('footer')
+</div>
+</div>
 
 @section('javascript')
 @show
