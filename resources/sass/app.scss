@@ -1,24 +1,44 @@
-$lang_menu_item_bg_color: #9febf3;
-$lang_menu_item_color: #7b4412;
-$lang_link_color: #e2ec9d;
+//$lang_menu_item_bg_color: #9febf3;
+//$lang_menu_item_color: #7b4412;
+$hat_link_color: #e2ec9d;
+$main_hat_bg_color: #6d4a30;
 
-div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
+div.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
 	min-width: 0;
 }
 
-div.container.c-cont div.jumbotron-cnina div.lang a{
-  color: $lang_link_color;
+div.c-cont div.jumbotron-cnina a{
+  color: $hat_link_color;
 }
-div.container.c-cont div.jumbotron-cnina div.lang a:hover{
-  color: darken($lang_link_color, 20%);
+//div.c-cont div.jumbotron-cnina a:hover,
+div.c-cont div.jumbotron-cnina a:hover{
+  color: darken($hat_link_color, 40%);
 }
 
-div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
-	background-color: $lang_menu_item_bg_color;
+div.c-cont div.jumbotron-cnina div.dropdown-menu{
+  background-color: invert($main_hat_bg_color, 40%);
 }
-div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item{
-  color: $lang_menu_item_color;
+div.c-cont div.jumbotron-cnina a.dropdown-item{
+  color: $hat_link_color;
 }
-div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item:hover{
-  background-color: invert($lang_menu_item_bg_color, 15%);
+div.c-cont div.jumbotron-cnina a.dropdown-item:hover{
+  background-color: invert($main_hat_bg_color, 20%);
+}
+
+div.c-cont div.jumbotron-cnina nav.nav-bar-cnina a{
+  padding: 0 5px 0 5px;
+}
+
+
+div.c-cont div.jumbotron-cnina nav.nav-bar-cnina{
+  background-color: lighten($main_hat_bg_color, 10%);
+  border-radius: 0.3rem;
+}
+
+div.c-cont div.jumbotron-cnina{
+  padding: 1.3rem 1rem;
+  margin-bottom: 0;
+  color: bisque;
+  border-radius: 0.5rem;
+  background-color: $main_hat_bg_color;
 }

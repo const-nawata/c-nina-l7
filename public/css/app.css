@@ -1,24 +1,41 @@
-div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
+div.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
   min-width: 0;
 }
 
-div.container.c-cont div.jumbotron-cnina div.lang a {
+div.c-cont div.jumbotron-cnina a {
   color: #e2ec9d;
 }
 
-div.container.c-cont div.jumbotron-cnina div.lang a:hover {
-  color: #c9db48;
+div.c-cont div.jumbotron-cnina a:hover {
+  color: #8e9e1f;
 }
 
-div.container.c-cont div.jumbotron-cnina div.lang div.dropdown-menu {
-  background-color: #9febf3;
+div.c-cont div.jumbotron-cnina div.dropdown-menu {
+  background-color: #7c7570;
 }
 
-div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item {
-  color: #7b4412;
+div.c-cont div.jumbotron-cnina a.dropdown-item {
+  color: #e2ec9d;
 }
 
-div.container.c-cont div.jumbotron-cnina div.lang a.dropdown-item:hover {
-  background-color: #96cbd0;
+div.c-cont div.jumbotron-cnina a.dropdown-item:hover {
+  background-color: #745f50;
+}
+
+div.c-cont div.jumbotron-cnina nav.nav-bar-cnina a {
+  padding: 0 5px 0 5px;
+}
+
+div.c-cont div.jumbotron-cnina nav.nav-bar-cnina {
+  background-color: #906240;
+  border-radius: 0.3rem;
+}
+
+div.c-cont div.jumbotron-cnina {
+  padding: 1.3rem 1rem;
+  margin-bottom: 0;
+  color: bisque;
+  border-radius: 0.5rem;
+  background-color: #6d4a30;
 }
 
