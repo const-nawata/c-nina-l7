@@ -7,6 +7,10 @@ div.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
 	min-width: 0;
 }
 
+div.c-cont div.jumbotron-cnina nav.nav-bar-cnina li a{
+  padding: 0 5px 0 5px;
+}
+
 div.c-cont div.jumbotron-cnina a{
   color: $hat_link_color;
 }
@@ -18,15 +22,12 @@ div.c-cont div.jumbotron-cnina a:hover{
 div.c-cont div.jumbotron-cnina div.dropdown-menu{
   background-color: invert($main_hat_bg_color, 40%);
 }
-div.c-cont div.jumbotron-cnina a.dropdown-item{
+div.c-cont div.jumbotron-cnina div.dropdown-menu a.dropdown-item{
   color: $hat_link_color;
+  padding-left: 10px;
 }
 div.c-cont div.jumbotron-cnina a.dropdown-item:hover{
   background-color: invert($main_hat_bg_color, 20%);
-}
-
-div.c-cont div.jumbotron-cnina nav.nav-bar-cnina a{
-  padding: 0 5px 0 5px;
 }
 
 

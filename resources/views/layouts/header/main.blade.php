@@ -17,16 +17,16 @@
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="" href="#">{{ __( 'prompts.title.home') }}</a>
+					<a class="" href="#">{{ mb_ucfirst(__( 'prompts.title.home')) }}</a>
 				</li>
 
 {{--				{% if is_granted('ROLE_ADMIN') %}--}}
 				<li class="nav-item dropdown">
-					<a class="dropdown-toggle" href="#" role="button" id="dashboardDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ __('prompts.title.dashboard') }}</a>
+					<a class="dropdown-toggle" href="#" role="button" id="dashboardDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ mb_ucfirst(__('prompts.title.dashboard')) }}</a>
 
 					<div class="dropdown-menu" aria-labelledby="dashboardDropdownMenu">
-						<a class="dropdown-item" itemScope="user" href="#">{{ __('prompts.title.user') }}</a>
-						<a class="dropdown-item" itemScope="currency" href="#">{{ __('prompts.title.currency') }}</a>
+						<a class="dropdown-item" itemScope="user" href="#">{{ mb_ucfirst(__('prompts.title.user')) }}</a>
+						<a class="dropdown-item" itemScope="currency" href="#">{{ mb_ucfirst(__('prompts.title.currency')) }}</a>
 					</div>
 				</li>
 {{--				{% endif %}--}}
@@ -35,16 +35,16 @@
 
 			<ul class="navbar-nav ml-auto user-menu">
 				<li class="nav-item dropdown">
-					<a class="dropdown-toggle" href="#" role="button" id="userDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ __('prompts.title.user') }}</a>
+					<a class="dropdown-toggle" href="#" role="button" id="userDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ mb_ucfirst(__('prompts.title.user')) }}</a>
 
 					<div class="dropdown-menu" aria-labelledby="userDropdownMenu">
 
 {{--						{% if is_granted('IS_AUTHENTICATED_FULLY') %}--}}
-						<a class="dropdown-item" id="user_logout" href="#">{{ __('prompts.title.logging-out') }}</a>
-						<a class="dropdown-item" id="owneredit" href="#" onclick="">{{ __('prompts.title.edit') }}</a>
+						<a class="dropdown-item" id="user_logout" href="#">{{ mb_ucfirst(__('prompts.title.logging-out')) }}</a>
+						<a class="dropdown-item" id="owneredit" href="#" onclick="">{{ mb_ucfirst(__('prompts.title.edit')) }}</a>
 {{--						{% else %}--}}
-						<a class="dropdown-item" id="user_login" href="#">{{ __('prompts.title.logging-in') }}</a>
-						<a class="dropdown-item" id="user_register" href="#" data-toggle="modal" data-target="#modal_dialog">{{ __('prompts.title.registering') }}</a>
+						<a class="dropdown-item" id="user_login" href="#">{{ mb_ucfirst(__('prompts.title.logging-in')) }}</a>
+						<a class="dropdown-item" id="user_register" href="#" data-toggle="modal" data-target="#modal_dialog">{{ mb_ucfirst(__('prompts.title.registering')) }}</a>
 {{--						{% endif %}--}}
 					</div>
 				</li>
