@@ -1,7 +1,17 @@
-//$lang_menu_item_bg_color: #9febf3;
-//$lang_menu_item_color: #7b4412;
+//					Header.
+
 $hat_link_color: #e2ec9d;
 $main_hat_bg_color: #6d4a30;
+
+div.c-cont div.jumbotron-cnina,
+div.c-cont div.jumbotron-cnina-footer
+{
+  padding: 1.3rem 1rem;
+  margin-bottom: 0;
+  color: bisque;
+  border-radius: 0.5rem;
+  background-color: $main_hat_bg_color;
+}
 
 div.c-cont div.jumbotron-cnina div.lang div.dropdown-menu{
 	min-width: 0;
@@ -14,7 +24,7 @@ div.c-cont div.jumbotron-cnina nav.nav-bar-cnina li a{
 div.c-cont div.jumbotron-cnina a{
   color: $hat_link_color;
 }
-//div.c-cont div.jumbotron-cnina a:hover,
+
 div.c-cont div.jumbotron-cnina a:hover{
   color: darken($hat_link_color, 40%);
 }
@@ -36,10 +46,8 @@ div.c-cont div.jumbotron-cnina nav.nav-bar-cnina{
   border-radius: 0.3rem;
 }
 
-div.c-cont div.jumbotron-cnina{
-  padding: 1.3rem 1rem;
-  margin-bottom: 0;
-  color: bisque;
-  border-radius: 0.5rem;
-  background-color: $main_hat_bg_color;
+//	Footer
+
+div.c-cont div.jumbotron-cnina-footer{
+  margin-top: 100px;
 }

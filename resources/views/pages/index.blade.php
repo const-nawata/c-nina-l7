@@ -14,5 +14,5 @@
 @endsection
 
 @section('footer')
-	<div>Footer</div>
+	@include('layouts.footer.main')
 @endsection
